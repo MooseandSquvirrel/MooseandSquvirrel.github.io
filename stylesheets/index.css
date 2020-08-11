@@ -1,0 +1,112 @@
+/* CSS FOR ENTIRE PAGE */
+
+body {
+    background-image: url("../images/dubai.jpg");
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-family: 'Audiowide', cursive;
+    color: white;
+}
+
+.main {
+
+}
+
+
+/* Navbar */
+
+nav {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+/* navbar_hidden */
+
+#navbar_hidden {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    background:#521a4a;
+    font-size: 18px;
+}
+
+#navbar_hidden a {
+    color: rgb(238, 37, 37);
+}
+
+#navbar_hidden ul {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar_hidden li {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/* navbar_main */
+
+.navbar_main {
+    position: relative;
+    top: 5px;
+    font-size: 18px;
+    /* background: -webkit-linear-gradient(#eee, rgb(108, 61, 218));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.navbar_main ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar_main li {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/* .navbar_main-anim {
+    animation: 
+} */
+
+/* Navbar Animation */
+
+.slideOut {
+    transform: translateY(-100%); 
+    transition-duration: .5s;
+}
+
+.slideIn {
+    transform: translateY(0%);
+    transition-duration: 1s;
+}
+
+/* Name Triangle */
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #f00;
+}
+
+
+/* NOTES */
+
+/*
+
+-   Gradient circle (roll onto screen, over shoot a tad,
+    and come back hard
+-   
+*/
