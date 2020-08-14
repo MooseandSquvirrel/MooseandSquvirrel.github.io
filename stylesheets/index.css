@@ -1,7 +1,10 @@
 /* CSS FOR ENTIRE PAGE */
 
 body {
-    background-image: url("../images/dubai.jpg");
+    /* background-image: url("../images/dubai.jpg"); */
+    /* background-image: url("../images/2.jpg"); */
+    /* background-image: url("../images/bwBG.jpg"); */
+    background-image: url("../images/bw3.jpg");
     background-attachment: fixed;
     margin: 0;
     padding: 0;
@@ -11,8 +14,13 @@ body {
     color: white;
 }
 
-.main {
-
+#vid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    z-index: -1;
 }
 
 
@@ -40,6 +48,7 @@ li {
     width: 100vw;
     background:#521a4a;
     font-size: 18px;
+    z-index: 1;
 }
 
 #navbar_hidden a {
@@ -132,10 +141,10 @@ li {
         transform: translate(0%);
         opacity: 80%;
     }
-    96% {
+    91% {
         transform: translate(0%);
     }
-    98% {
+    95% {
         transform: translate(-10%)
     }
     100% {
@@ -201,8 +210,12 @@ li {
     90% {
         transform: translate(5000px);
       }
+    95% {
+        transform: translate(-10%, 100%);
+    }
     100% {
       columns: white;
+      transform: translate(0%, 100%);
     }
   }
 
@@ -219,7 +232,117 @@ li {
     }
   }
 
-/* About Module */
+#pow {
+    position: absolute;
+    transform: translate(100px, 100px);
+    opacity: 0%;
+    animation: powBang;
+    animation-duration: 2.5s;
+}
+
+@keyframes powBang {
+    0% {
+        opacity: 0%;
+    }
+    59% {
+        opacity: 0%;
+        transform: translate(100px, 100px) scale(.2);
+    }
+    70% {
+        opacity: 100%;
+        transform: translate(150px, 200px) scale(.4) rotate(40deg);
+    }
+
+    85% {
+        transform: translate(150px, 0px) scale(.6) rotate(-40deg);
+        opacity: 0%;
+    } 
+
+}
+
+#pow_about {
+    position: absolute;
+    transform: translate(100px, 100px);
+    opacity: 0%;
+}
+
+.pow2start {
+    animation: powBang2;
+    animation-duration: 2s;
+}
+
+@keyframes powBang2 {
+    0% {
+        opacity: 0%;
+    }
+    45% {
+        opacity: 0%;
+        transform: translate(-300px, -600px) scale(.1);
+    }
+    70% {
+        opacity: 100%;
+        transform: translate(-500px, -600px) scale(.4) rotate(-30deg);
+    }
+
+    85% {
+        transform: translate(150px, 0px) scale(.2) rotate(30deg);
+        opacity: 0%;
+    } 
+
+}
+
+
+
+/* About Module Main Containers*/
+
+.section_size {
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100px;
+    display: flex;
+}
+
+.module_container {
+    background-color: rgba(235,50,35,.850);
+    /* padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 4px; */
+    height: 500px;
+    width: 100%;
+    /* font-family: 'Russo One', sans-serif; */
+}
+
+.module {
+    /* background-color: azure; */
+    background-color: rgba(32,53,223,.850);
+    height: 76%;
+    width: 100%;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.module_container h3 {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.module h4 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-size: 30px;
+    color:yellow;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: black; 
+    font-family: 'Russo One', sans-serif;
+} 
+
+
+/* About Module Name div */
+
+.title {
+    border-bottom: 1px solid red;
+}
 
 
 /* NOTES */

@@ -1,7 +1,7 @@
 
 
 $(document).ready( function () {
-    var topofDiv = $("#d").offset().top;
+    var topofDiv = $("#logo").offset().top;
 
     $(window).scroll(function(){
         if($(window).scrollTop() > topofDiv){
@@ -9,6 +9,16 @@ $(document).ready( function () {
         }
         else{
             $("#navbar_hidden").addClass('slideOut').removeClass('slideIn');
+        }
+    });
+}) 
+
+$(document).ready( function () {
+    var topofDiv = $("#about").offset().top;
+
+    $(window).scroll(function(){
+        if($(window).scrollTop() > topofDiv){
+           $("#pow_about").addClass('pow2start')
         }
     });
 }) 
