@@ -70,11 +70,11 @@ li {
 
 .navbar_main {
     position: relative;
-    top: 5px;
     font-size: 18px;
-    /* background: -webkit-linear-gradient(#eee, rgb(108, 61, 218));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    top: 0;
+    background: -webkit-linear-gradient( rgb(108, 61, 218, .4),#f00);
+    transform: translate(10px, -10px);
+    padding: 5px;
 }
 
 .navbar_main ul {
