@@ -1,5 +1,5 @@
 
-
+// Navbar Slide in on scroll
 $(document).ready( function () {
     var topofDiv = $("#logo").offset().top;
 
@@ -13,6 +13,7 @@ $(document).ready( function () {
     });
 }) 
 
+// Pow effect on slide
 $(document).ready( function () {
     var topofDiv = $("#about").offset().top;
 
@@ -22,3 +23,22 @@ $(document).ready( function () {
         }
     });
 }) 
+
+// Makes logo triangle permanently visible
+$(document).ready( function () {
+    setTimeout(function()
+    { 
+        $("#logo").css("visibility","visible");
+    },
+        2500);
+})
+
+// Makes logo h1/h2 permanently visible
+$(document).ready( function () {
+    setTimeout(function()
+    { 
+        $("#logo_h1").css("visibility","visible");
+        $("#logo_h2").css("visibility","visible");
+    },
+        1200);
+})

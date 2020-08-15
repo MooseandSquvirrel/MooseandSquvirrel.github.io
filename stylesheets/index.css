@@ -113,6 +113,10 @@ li {
     opacity: 80%;
 }
 
+.display-arrow {
+    display: block;
+}
+
 .logo-parent {
     height: 100vh;
     display: flex;
@@ -122,6 +126,7 @@ li {
 
 @keyframes moveDown {
     0% {
+        visibility: visible;
         transform: translateY(-100%);
         opacity: 0%;
     }
@@ -155,6 +160,8 @@ li {
 #logo {
     animation-name: moveDown;
     animation-duration: 1.6s;
+    animation-delay: 1s;
+    visibility: hidden;
 }
 
 @keyframes from_left {
@@ -174,6 +181,8 @@ li {
     font-size: 60px;
     animation: from_left;
     animation-duration: 1s;
+    animation-delay: 1s;
+    visibility: hidden;
 }
 
 @keyframes from_right {
@@ -193,6 +202,8 @@ li {
     animation: textAppear;
     animation-duration: 1.5s;
     opacity: 100%;
+    animation-delay: 1s;
+    visibility: hidden;
 }
   
   @keyframes textAppear {
@@ -238,6 +249,7 @@ li {
     opacity: 0%;
     animation: powBang;
     animation-duration: 2.5s;
+    animation-delay: 1s;
 }
 
 @keyframes powBang {
@@ -269,6 +281,7 @@ li {
 .pow2start {
     animation: powBang2;
     animation-duration: 2s;
+    animation-delay: 1s;
 }
 
 @keyframes powBang2 {
