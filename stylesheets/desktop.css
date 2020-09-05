@@ -4,7 +4,7 @@ body {
     /* background-image: url("../images/dubai.jpg"); */
     /* background-image: url("../images/2.jpg"); */
     /* background-image: url("../images/bwBG.jpg"); */
-    background-image: url("../images/bw3.jpg");
+    background-image: url("./images/bw3.jpg");
     background-attachment: fixed;
     margin: 0;
     padding: 0;
@@ -420,6 +420,19 @@ li {
 
 
 /* NOTES */
+
+/* Project Modules */
+
+.column1_proj {
+    width: 50%;
+}
+
+.column2_proj {
+    width: 100px;
+    height: 100px;
+
+}
+
 
 /*
 -   Gradient circle (roll onto screen, over shoot a tad,

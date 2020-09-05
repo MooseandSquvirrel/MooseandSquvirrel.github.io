@@ -4,7 +4,7 @@ body {
     /* background-image: url("../images/dubai.jpg"); */
     /* background-image: url("../images/2.jpg"); */
     /* background-image: url("../images/bwBG.jpg"); */
-    background-image: url("../images/bw3.jpg");
+    background-image: url("./images/bw3.jpg");
     background-attachment: fixed;
     margin: 0;
     padding: 0;
@@ -351,6 +351,7 @@ li {
     font-family: 'Russo One', sans-serif;
 } 
 
+
 /* About Module Name div */
 
 .title {
@@ -396,7 +397,6 @@ li {
 .bio_parag {
     font-size: 15px;
     line-height: 2em;
-    border-bottom: 1px solid red;
     padding-bottom: 1em;
 }
 
@@ -406,6 +406,62 @@ li {
     padding-bottom: 1em;
 }
 
+/* Project Modules */
+
+.module_proj {
+    /* background-color: azure; */
+    background-color: rgba(32,53,223,.850);
+    height: 76%;
+    width: 100%;
+    /* Below fixes padding to not add to width */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.column1_proj {
+    width: 100%;
+    padding-left: 1em;
+}
+
+.column2_proj img{
+    width: 80%;
+    padding-left: 2.5em;
+    padding-bottom: 2em
+}
+
+.module_proj h4 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-top: 15px;
+    font-size: 40px;
+    color:yellow;
+    -webkit-text-stroke-width: 1px; 
+    -webkit-text-stroke-color: black; 
+    font-family: 'Russo One', sans-serif;
+} 
+
+.proj_button {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.proj_button button {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.proj_button a {
+    font-size: 20px;
+}
 
 /* NOTES */
 
