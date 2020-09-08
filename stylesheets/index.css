@@ -312,6 +312,7 @@ li {
     width: 90vw;    
     display: flex;
     margin: 0 auto;
+    padding-top: 3em;
 }
 
 .module_container {
@@ -457,10 +458,13 @@ li {
     padding-right: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
+    background: -webkit-linear-gradient( rgb(108, 61, 218, .9),#f00);
 }
 
 .proj_button a {
+    color: white;
     font-size: 20px;
+    font-family: 'Audiowide', cursive;
 }
 
 /* NOTES */
