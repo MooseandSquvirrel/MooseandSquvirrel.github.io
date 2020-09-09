@@ -434,11 +434,13 @@ li {
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box; /* Opera/IE 8+ */
     padding-left: 20px;
-    padding-right: 20px;
+    /* padding-right: 20px; */
+    padding-top: 2em;
+    padding-bottom: 2em;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .column1_proj {
@@ -446,12 +448,20 @@ li {
 }
 
 .column2_proj {
-    width: 100px;
-    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
 
+.column2_proj img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
 }
 
 .module_proj h4 {
+    padding-left: 15px;
     margin-block-start: 0;
     margin-block-end: 0;
     padding-top: 15px;
@@ -464,6 +474,7 @@ li {
 
 .proj_button {
     text-align: center;
+    padding-top: 1em;
     padding-bottom: 1em;
 }
 
