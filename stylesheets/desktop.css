@@ -14,6 +14,15 @@ body {
     color: white;
 }
 
+#konamiVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    display:none;
+}
+
 #vid {
     position: fixed;
     top: 0;

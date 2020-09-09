@@ -20,6 +20,7 @@
         <link rel="stylesheet" media="screen and (max-width: 754px)" href="./stylesheets/index.css">
         <link rel="stylesheet" media="screen and (min-width: 755px)" href="./stylesheets/desktop.css">
 
+        <script src="./js/konami.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script  src="./js/nav_animate.js"></script>
         <script src="./js/aos_init.js"></script>
@@ -28,6 +29,9 @@
         </script>
     </head>
     <body>
+        <video id="konamiVideo">
+            <source src="./wice.mp4" type="video/mp4">
+        </video>
 
         <section class="main">
             <nav id="navbar_hidden" class="slideOut">
@@ -47,7 +51,7 @@
                 </ul>
             </nav>
             <header>
-                <nav class="navbar_main" data-aos="zoom-out-down" data-aos-duration="3000" data-aos-delay="2500">
+                <nav id="nav" class="navbar_main" data-aos="zoom-out-down" data-aos-duration="3000" data-aos-delay="2500">
                     <ul>
                         <li>
                             <a href="#">Home</a>
@@ -209,3 +213,7 @@
         <script src="" async defer></script>
     </body>
 </html>
+
+<!-- Support Wice (Konami Code Video):
+https://soundcloud.com/wice-music 
+https://www.facebook.com/WiceMusic -->
