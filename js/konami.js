@@ -48,7 +48,7 @@ var allowedKeys = {
     setTimeout( function(){$('#logo_h2').hide();} , 6200);
     setTimeout( function(){$('#nav').hide();} , 6600);
 
-    // show logo when video ends
+    // show logo when video
     setTimeout( function(){$('#logo').show();} , 180000);
     setTimeout( function(){$('#logo_h1').show();} ,180000);
     setTimeout( function(){$('#logo_h2').show();} , 180000);
