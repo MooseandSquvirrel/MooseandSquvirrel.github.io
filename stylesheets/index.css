@@ -14,6 +14,15 @@ body {
     color: white;
 }
 
+#konamiVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    display: none;
+}
+
 #vid {
     position: fixed;
     top: 0;
@@ -310,7 +319,7 @@ li {
 
 .section_size {
     width: 90vw;    
-    display: flex;
+    /* display: flex; */
     margin: 0 auto;
     padding-top: 3em;
 }
@@ -426,6 +435,23 @@ li {
     flex-direction: column;
 }
 
+.module_proj_contact {
+    height: 76%;
+    width: 100%;
+    /* Below fixes padding to not add to width */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
 .column1_proj {
     width: 100%;
     padding-left: 1em;
@@ -468,6 +494,114 @@ li {
     font-size: 20px;
     font-family: 'Audiowide', cursive;
 }
+
+/* Contact Section */
+
+.section_size_contact {
+    width: 100vw; 
+    max-width: 1100px;   
+    margin: 0 auto;
+    padding-top: 3em;
+}
+
+.module_container_contact {
+    background-color: rgba(235,50,35,.950);
+    height: 100%;
+    padding-bottom: 20px;
+}
+
+.section_size_contact .module_container .module_proj_contact .column1_proj p {
+    padding-bottom: 0%;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 20px;
+}
+
+#contact_title {
+    font-weight: bold;
+}
+
+#contact_email {
+    font-size: 18px;
+}
+
+#github_img {
+    height: 30px;
+    width: 30px;
+    padding-left: 10px;
+}
+
+.contact_btn {
+    font-family: 'IBM Plex Mono', monospace;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* background-color: rgba(32,53,223,.850); */
+    background-color: transparent;
+    width: 100%;
+    display: grid;
+    /* grid-template-columns: auto auto; */
+}
+
+.column2_proj_contact {
+    /* display: flex; */
+    justify-content: center;
+}
+
+.proj_button_contact {
+    text-align: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: grid;
+}
+
+.proj_button_contact a {
+    display: flex;
+    color: black;
+    border: 2px solid black;
+    padding: 0 5px;
+    width: 80%;
+    max-width: 250px;
+    height: 88px;
+    margin-top: 10px;
+    grid-row-gap: 1;
+}
+
+.proj_button_contact a:hover {
+    color: white;
+    border: 2px solid black;
+}
+
+.grid_one {
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.grid_two {
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.grid_three {
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.grid_four {
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+
 
 /* NOTES */
 
