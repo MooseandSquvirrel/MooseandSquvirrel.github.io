@@ -429,7 +429,6 @@ li {
     box-sizing: border-box; /* Opera/IE 8+ */
     padding-left: 20px;
     padding-right: 20px;
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -446,7 +445,6 @@ li {
     padding-right: 20px;
     padding-top: 2em;
     padding-bottom: 2em;
-    font-family: 'IBM Plex Mono', monospace;
     font-size: 20px;
     display: flex;
     flex-direction: column;
@@ -499,15 +497,15 @@ li {
 
 .section_size_contact {
     width: 100vw; 
-    max-width: 1100px;   
     margin: 0 auto;
-    padding-top: 3em;
+    padding-top: 7em;
 }
 
 .module_container_contact {
     background-color: rgba(235,50,35,.950);
     height: 100%;
     padding-bottom: 20px;
+    padding-left: 2em;
 }
 
 .section_size_contact .module_container .module_proj_contact .column1_proj p {
