@@ -487,7 +487,7 @@ li {
     background: -webkit-linear-gradient( rgb(108, 61, 218, .9),#f00);
 }
 
-.proj_button a {
+.proj_button a button{
     color: white;
     font-size: 20px;
     font-family: 'Audiowide', cursive;
