@@ -12,6 +12,8 @@ body {
     font: inherit;
     font-family: 'Audiowide', cursive;
     color: white;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #konamiVideo {
@@ -312,7 +314,6 @@ li {
     } 
 
 }
-
 
 
 /* About Module Main Containers*/
