@@ -1,10 +1,10 @@
 /* CSS FOR ENTIRE PAGE */
 
 body {
-    /* background-image: url("../images/dubai.jpg"); */
+    /* background-image: url("../images/dubai.jpg"); */ 
     /* background-image: url("../images/2.jpg"); */
     /* background-image: url("../images/bwBG.jpg"); */
-    background-image: url("./images/bw3.jpg");
+    /* background-image: url("./images/bw3.jpg"); */
     background-attachment: fixed;
     margin: 0;
     padding: 0;
@@ -33,7 +33,6 @@ body {
     height: auto;
     z-index: -1; 
 }
-
 
 /* Navbar */
 
