@@ -17,8 +17,9 @@
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <!-- <link rel="stylesheet" media="screen and (max-width: 660px)" href="../stylesheets/index.css">
         <link rel="stylesheet" media="screen and (min-width: 661px)" href="../stylesheets/desktop.css"> -->
-        <link rel="stylesheet" media="screen and (max-width: 754px)" href="./stylesheets/index.css">
+        <link rel="stylesheet" media="screen and (max-width: 754px) and (min-width: 376px)" href="./stylesheets/index.css">
         <link rel="stylesheet" media="screen and (min-width: 755px)" href="./stylesheets/desktop.css">
+        <link rel="stylesheet" media="screen and (max-width: 375px)" href="./stylesheets/mobile_320.css">
 
         <script src="./js/konami.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -33,6 +34,9 @@
         <!-- <video id="konamiVideo">
             <source src="./wice.mp4" type="video/mp4">
         </video> -->
+        <video autoplay muted id="vid">
+            <source src="./images/whitetorainbow.mp4" type="video/mp4">
+        </video>
 
         <section class="main">
             <nav id="navbar_hidden" class="slideOut">
@@ -78,11 +82,8 @@
                             Gardner
                     </h1>
                     <h2 id="logo_h2" >< webdev ></h2>
-                    <!-- <img id="pow" src="./images/pow4.png" alt=""> -->
+                    <img id="pow" src="./images/pow4.png" alt="">
                 </div>
-                <video autoplay muted id="vid">
-                        <source src="./images/whitetorainbow.mp4" type="video/mp4">
-                </video>
             </section>
         </section>
 
@@ -90,7 +91,7 @@
             <div class="module_container">
                 <h3 data-aos="fade-left" data-aos-delay="200">ABOUT</h3>
                 <div class="module">
-                    <img id="pow_about" src="./images/pow5.png" alt="">
+                    <!-- <img id="pow_about" src="./images/pow5.png" alt=""> -->
                     <div class="column1">
                         <h4>Andy Gardner</h4>
                         <p class="title">Full Stack Web Developer</p>
