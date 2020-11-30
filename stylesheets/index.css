@@ -41,6 +41,10 @@ nav {
     display: block;
 }
 
+#mobile_nav {
+    display: none;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -601,14 +605,4 @@ li {
     grid-column: 2;
     grid-row: 2;
 }
-
-
-/* NOTES */
-
-/*
--   Gradient circle (roll onto screen, over shoot a tad,
-    and come back hard
--   REMEBER TO CHANGE THE nav_animate.js VARIABLE FOR 
-    WHAT THE MENU COMPARES TO SCROLL HEIGHT
-*/
 

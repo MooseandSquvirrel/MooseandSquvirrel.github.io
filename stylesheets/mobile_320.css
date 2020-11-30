@@ -40,6 +40,7 @@ body {
 
 nav {
     display: block;
+    color: rebeccapurple;
 }
 
 a {
@@ -55,6 +56,7 @@ li {
 /* navbar_hidden */
 
 #navbar_hidden {
+    display: none;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -81,6 +83,7 @@ li {
 /* navbar_main */
 
 .navbar_main {
+    display: none;
     position: relative;
     font-size: 18px;
     top: 0;
@@ -99,12 +102,12 @@ li {
 .navbar_main li {
     padding-left: 3%;
     padding-right: 3%;
-}
+} 
 
 
 /* Navbar Animation */
 
-.slideOut {
+/* .slideOut {
     transform: translateY(-100%); 
     transition-duration: .5s;
 }
@@ -112,7 +115,7 @@ li {
 .slideIn {
     transform: translateY(0%);
     transition-duration: 1s;
-}
+} */
 
 
 /* Name Triangle */
@@ -607,12 +610,96 @@ li {
 }
 
 
-/* NOTES */
+/* Mobile Menu */
 
-/*
--   Gradient circle (roll onto screen, over shoot a tad,
-    and come back hard
--   REMEBER TO CHANGE THE nav_animate.js VARIABLE FOR 
-    WHAT THE MENU COMPARES TO SCROLL HEIGHT
-*/
-
+#menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  #menuToggle input
+  {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+  
+  #menuToggle span
+  {
+    display: flex;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: -webkit-linear-gradient( rgba(255, 255, 255, 0.9),#f00);
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+  
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: #36383F;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  #menu
+  {
+    position: absolute;
+    width: 210px;
+    height: 85vh;
+    box-shadow: 0 0 10px #85888C;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: -webkit-linear-gradient( rgb(108, 61, 218, .9),#f00);
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  #menu li
+  {
+    padding: 10px 0;
+    transition-delay: 2s;
+  }
+  
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
