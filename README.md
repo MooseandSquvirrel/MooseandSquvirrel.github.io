@@ -72,7 +72,7 @@
 ![](/images/portfolioScreenShot.png)
 
 
-Welcome to my portfolio site's README! I wanted to be able to feature a few of the web
+Welcome to my portfolio site's README!<br /><br /> I wanted to be able to feature a few of the web
 projects I've worked on or created by building a site from scratch with no boilerplate template.
 Here's the code for anyone out there who would like to modify it to make their own portfolio. 
 As a fun Easter Egg, it comes with a ready made Konami Code that you just need to go into the Konami.js file and 
