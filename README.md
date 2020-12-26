@@ -1,5 +1,3 @@
-# MooseandSquvirrel.github.io
-
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -139,7 +137,7 @@ Project Link: [https://github.com/MooseandSquvirrel/MooseandSquvirrel.github.io(
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
+* [lbesson](https://lbesson.mit-license.org/)
 * [GitHub Pages](https://pages.github.com)
 * [aos](https://github.com/michalsnik/aos)
 
